@@ -1,22 +1,30 @@
-// src/app/page.tsx
-import Header from './components/sections/Header';
-import Hero from './components/sections/Hero';
-import Features from './components/sections/Features';
-import Testimonials from './components/sections/Testimonials';
-import CTA from './components/sections/CTA';
-import Footer from './components/sections/Footer';
+import FinalCta from '@/components/sections/FinalCta';
+import Footer from '@/components/sections/Footer';
+import Header from '@/components/sections/Header';
+import Hero from '@/components/sections/Hero';
+import HotItWorks from '@/components/sections/HowItWorks';
+import ProductPreviewSection from './components/sections/ProductPreviewSection';
+import ProgressSection from '@/components/sections/ProgressSection';
+import WhyUse from '@/components/sections/WhyUse';
+import TodayRoutine from "@/components/sections/TodayRoutine";
+
+import { TaskProvider } from './contexts/TaskContext';
 
 export default function Home() {
   return (
-    <main>
-      <h1>Home</h1>
-      {/* <Header />
-      <Hero />
-      <Features />
-      <Testimonials />
-      <CTA />
-      <Footer /> */}
-      
-    </main>
+    <TaskProvider>
+      <main>
+        <Header />
+        <Hero />
+        <TodayRoutine />
+        <HotItWorks />
+        <ProductPreviewSection />
+        <WhyUse />
+        <ProgressSection />
+        <FinalCta />
+        <Footer />
+
+      </main>
+    </TaskProvider>
   )
 }
