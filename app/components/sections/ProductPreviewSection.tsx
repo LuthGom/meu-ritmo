@@ -10,7 +10,7 @@ export default function ProductPreviewSection() {
     const id = useId();
     return (
         <section className={`w-full sm:w-6/10 mx-auto! px-4!`}>
-            <Container className={`py-8! `}>
+            <Container className={`py-8! mx-auto!`}>
                 <div className={`flex flex-col items-center justify-center flex-wrap `}>
 
                     <h2 className={`text-2xl! font-semibold! py-2!`}>Experimente agora</h2>

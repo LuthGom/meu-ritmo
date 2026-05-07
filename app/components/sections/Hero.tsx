@@ -2,7 +2,7 @@ import { Container } from "@/components/ui/Container";
 export default function Hero() {
     return (
         <section aria-labelledby="hero-title" className="mx-auto w-full text-center ">
-            <Container className="flex items-center flex-col gap-4! p-4!  px-4! sm:px-6 lg:px-8 text-center mx-4!">
+            <Container className="flex items-center flex-col gap-4! p-4!  px-4! sm:px-6 lg:px-8 text-center mx-auto!">
                 <div className={`px-4! py-1! bg-[#fff3d6] rounded-full text-sm`}>
 
                 <p className={`text-[#b8860b] `}>Simples, leve e eficaz</p>
