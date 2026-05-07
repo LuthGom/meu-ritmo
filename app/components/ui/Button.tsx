@@ -4,12 +4,14 @@ import { ButtonHTMLAttributes } from 'react'
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'ghost'
   size?: 'sm' | 'md' | 'lg'
+  type : 'submit' | 'reset' | 'button'
 }
 
 export default function Button({
   variant = 'primary',
   size = 'md',
   className = '',
+  type = "submit" ,
   children,
   ...props
 }: ButtonProps) {
