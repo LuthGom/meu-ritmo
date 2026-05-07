@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import TaskItem from "./TaskItem";
-import {useTasks} from "@/contexts/TaskContext";
+import { useTasks } from "@/contexts/TaskContext";
 
 export default function Tasklist() {
     const { tasks, removeTask } = useTasks();
@@ -12,14 +12,14 @@ export default function Tasklist() {
     return (
         <div className={`w-full!`}>
             {tasks.map((item) => (
-                 <TaskItem 
+                <TaskItem
                     key={item.id}
-                    task = {{...item, time: '', done: false, createdAt: new Date().toDateString()}}
+                    task={{ ...item, done: false, createdAt: new Date().toDateString() }}
                     deleteEvent={() => removeTask(item.id)}
                 />
             ))}
 
-           
+
         </div>
     )
 }

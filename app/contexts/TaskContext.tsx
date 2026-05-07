@@ -8,11 +8,13 @@ export interface Task {
     id: string;
     title: string;
     description: string;
+    time: string;
 }
 
 export type CreateTaskInput = {
     title: string;
     description: string;
+    time: string;
 };
 
 interface TaskContextData {
