@@ -1,0 +1,1 @@
+export const TASKS_STORAGE_KEY = "routine-app:tasks";
