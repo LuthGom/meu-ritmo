@@ -6,15 +6,15 @@
 
 :root {
   /* Baseado na sua análise */
-  --text-hero: clamp(2.5rem, 5vw, 4rem);
+  /* --text-hero: clamp(2.5rem, 5vw, 4rem);
   --text-2xl: clamp(1.75rem, 3vw, 2.5rem);
   --text-xl: clamp(1.25rem, 2vw, 1.5rem);
   --text-base: clamp(1rem, 1.5vw, 1.125rem);
   
   --space-xl: clamp(2rem, 5vw, 4rem);
   --space-lg: clamp(1.5rem, 4vw, 2rem);
-  --space-md: clamp(1rem, 3vw, 1.25rem);
+  --space-md: clamp(1rem, 3vw, 1.25rem); */
   
   --radius-md: 0.75rem;
-  --container-max: 1200px;
+  --container-max: 100%;
 }
